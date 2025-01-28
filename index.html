@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kigali - The Heart of Rwanda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn.countryflags.com/thumbs/rwanda/flag-800.png" type="image/png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Kigali<span> ❤️ Rwanda</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="rwandacanada.html">Rwanda & Canada</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero parallax" style="background-image: url('https://elephantgrass.nl/wp-content/uploads/2021/12/rolling-hills-of-rwanda-on-elephantgrass-scaled.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-title-group">
+                <h1 class="hero-title">WELCOME TO MY WEBSITE</h1>
+                <h2 class="hero-subtitle">ABOUT RWANDA</h2>
+            </div>
+            <p class="hero-paragraph">I was born and grew up in a small country located in East Africa called Rwanda. As part of this assignment, I wanted to showcase my country, so my colleagues and you, my professor, will be inspired to visit us. Let's get started...</p>
+            <a href="#about" class="cta-btn">Let's Start!</a>
+        </div>
+    </header>
+
+    <!-- About Rwanda Section -->
+    <section id="about" class="content-section">
+        <h2>About Kigali, Our Capital City</h2>
+        <p>
+            Kigali is the vibrant capital of Rwanda, blending tradition and modernity among rolling hills. Known for its cleanliness, innovative growth, and rich cultural heritage, Kigali offers a gateway to the heart of Africa. 
+        </p>
+        <!-- The Embedded YouTube Video -->
+
+    <div class="youtube-video">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/5FVO3IHwIzw" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture-section">
+        <div class="parallax-bg">
+            <h2>Rwandan Culture</h2>
+        </div>
+        <div class="culture-container">
+            <div class="culture-item">
+                <img src="https://www.nkuringosafaris.com/wp-content/uploads/2022/11/intore_rwanda_virungas.jpg" alt="Traditional Dance">
+                <h3>Traditional Dance</h3>
+                <p>Our traditional dance is a symbol of bravery and pride in Rwandan culture.</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/6570f3bad95f786fd2a1f950/1701906957422-SBMTHH0AX8ZZGUHUCI7T/imigongo_2.jpg?format=1000w" alt="Imigongo Art">
+                <h3>Imigongo Art</h3>
+                <p>These are unique geometric designs made from natural materials. As an IMD student, I am intrigued by them — they date back to the 1600s!</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://rwandatoday.africa/resource/image/3777446/landscape_ratio16x9/1160/652/efd6437f16568472d61aada97e1a4346/kP/buildings.jpg" alt="Modern Kigali">
+                <h3>Modern Kigali</h3>
+                <p>Rwanda is an ever-growing economy, and you'll love the views when you visit!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section id="interactive" class="content-section">
+        <h2>So Professor, Are You Ready? 🤔</h2>
+        <p>
+            Kigali is calling! Embark on a journey filled with culture, beauty, and innovation. Are you ready to say yes to this adventure?
+        </p>
+        <div class="ready-buttons">
+            <button id="yes-button" onclick="response('yes')">Yes, I'm Ready! 🎉</button>
+            <button id="no-button" onclick="response('no')">Not Yet 😅</button>
+        </div>
+        <div id="response-message"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Contact Me!</h2>
+        <p>
+            Got questions or need help planning your visit to Kigali? Reach out to me!
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:josiasngenda@visitkigali.com">josiasngenda@visitkigali.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+250788123456">+250 788 123 456</a></p>
+    </section>
+</main>
+    <!-- Footer -->
+    <footer>
+        <p>IMD Assignment by Josias ❤️ © 2025.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function response(answer) {
+            const message = document.getElementById('response-message');
+            if (answer === 'yes') {
+                message.innerHTML = `<p>🎉 Fantastic! Start packing your bags and get ready for breathtaking views and warm hospitality! ☕✈️</p>`;
+            } else {
+                message.innerHTML = `<p>😅 No worries! We'll keep inspiring you with Rwanda's beauty. 😉</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
